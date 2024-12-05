@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="Booking.css"> -->
+  <title>Document</title>
+  <style>
+    
+.bg-image{
+    height: 110px;
+    width: 100%;
+    background-color:#006ce4;
+    
+    
+}
+.body-img{
+    height: 400px;
+    width: 100%;
+    color: white;
+    background-image: url(https://q-xx.bstatic.com/xdata/images/xphoto/1440x434/406865573.jpeg?k=d71526f19cab0f2c91fc5d4779a13ee67acf8e0515702299f0f5031a41f518be&o=);
+}
+ .body-img h1{
+    margin-left: 4em;
+
+}
+.body-img h3{
+    margin-left: 5.5em;
+}
+.body-img
+button{
+    height: 3.5em;
+   width: 9em;
+   margin-left: 9.9em;
+}
+/* .button[type="signin"]{
+    text-align: center;
+    background-color: white;
+    font: 2em;
+} */
+/* icons height weight */
+.bi-person-wheelchair{
+    font-size: 28px;
+    color: white;
+}
+.bi-airplane{
+    font-size: 28px;
+    color: white;
+
+}
+.bi-award-fill{
+    font-size: 28px;
+    color: white;
+
+}
+.bi-car-front{
+    font-size: 28px;
+    color: white;
+
+}
+.bi-ev-front{
+    font-size: 28px;
+    color: white;
+
+}
+
+
+ .nav-content{
+    display: flex;
+    padding-top:1em;
+} 
+.nav-content h2{
+    padding-left: 5em;
+}
+.nav-buttons{
+    display: flex;
+    gap: 1em;
+    margin-left: 30em;
+    
+}
+/* .inr{
+    height: 2em;
+    width: 3em;
+    font-size: 2em;
+    color: white;
+    /* border: 2px solid black; */
+
+ */
+.flag{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(https://i.pinimg.com/736x/0e/79/86/0e798675f3f2193fc66f1e1c6a81c8c1.jpg);
+    background-size: cover;
+    
+    border: 2px solid black;
+
+}
+ .questionmark{
+    height:25px;
+    width: 25px;
+    font-size: 1.5em;
+    color: white;
+    font-family: inherit;
+    
+
+} 
+.headicons{
+    display: flex;
+    margin-left: 10em;
+    gap: 10px;
+}
+
+
+.bed{
+    height: 38px;
+    width: 100px;
+    /* border-radius: 16px;
+    border: 2px solid lightblue; */
+    font-size: 22px;
+
+
+}
+.flight{
+    height: 38px;
+    width: 100px;
+    font-size: 22px;
+
+
+}
+.hotel{
+    
+    font-size: 22px;
+    
+
+
+}
+.carrent{
+    height: 38px;
+    width: 100px;
+    font-size: 22px;
+    
+
+
+}
+
+.searchbar{
+    height: 50px;
+    width: 75%;
+    border-radius: 2px;
+    border: 4px solid rgb(255, 183, 0);
+    margin-left: 10em;
+    margin-top: 7.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    background-color: aliceblue;
+
+}
+.searchbar .b1,.b2,.b3{
+    height: 50px;
+    width: 60%;
+    border-radius: 2px;
+    border: 4px solid rgb(255, 183, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar .b4{
+    height: 50px;
+    width: 20%;
+    border-radius: 2px;
+    border: 4px solid rgb(255, 183, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006ce4;
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+
+
+}
+.body-content{
+    margin-left: 10em;
+    margin-top: 2em;
+}
+.body-content h2{
+    margin-top: 2em;
+}  
+.card1{
+    height: 160px;
+    width: 90%;
+    border-radius: 5px;
+    border: 3px solid rgb(247, 241, 241);
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30%;
+}
+.card1 h3{
+    margin-top: 10px;
+}
+
+.card1 .img{
+    height: 124px;
+    width: 124px;
+    border-radius: 4px;
+    /* border: 2px solid rgb(212, 200, 200); */
+     /* margin-left: 83%;  */
+    background-image: url(https://q-xx.bstatic.com/xdata/images/xphoto/500x500/372051085.jpeg?k=f5182852fa2c998e2b47cfd922da41ae16c42beb02fb70ecb57ee55ced3271f6&o=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-size: 124px 124px;
+    
+    
+    
+}
+.card1 p{
+    font-size: 18px;
+}
+.card1 h3{ 
+    font-size: 18px;
+}
+
+
+/* explore India code */
+.explore-india{
+    margin-right: 10%;
+    gap: 5px;
+    white-space: nowrap;
+    
+    overflow-x: auto;
+    overflow-y: hidden; 
+    
+    
+}
+/* hover */
+.explore-india:hover{
+    
+}
+.explore1:hover,.explore2:hover,.explore3:hover, .explore4:hover, .explore5:hover, .explore6:hover, .explore7:hover, .explore8:hover, .explore9:hover, .explore10:hover{
+    transform: scale(1.1);
+    
+    
+
+}
+.explore1,.explore2,.explore3, .explore4, .explore5, .explore6, .explore7, .explore8, .explore9, .explore10{
+
+    height: 300px;
+    width: 310px;
+    /* border: 2px solid black;  */
+    border-radius: 8px;
+    display:inline-block;
+    transition: transform 1s ease;
+    
+    
+}
+
+.explore1{
+    background-image: url(https://www.myyellowplate.com/wp-content/uploads/2021/06/Best-Places-to-visit-in-Lucknow-1.jpg);
+    background-size: 310px 300px;
+}
+.explore2{
+    background-image: url(https://wallpapercave.com/wp/wp7148109.jpg);
+    background-size: 310px 300px;
+}
+.explore3{
+    background-image: url(https://images.tv9hindi.com/wp-content/uploads/2022/10/PM-Modi-to-travel-Shree-Mahakaleshwar-Temple-in-Ujjain-historical-importance-of-uJjain-why-avantika-nagri-was-centre-to-science-and-math.jpg);
+    background-size: 310px 300px;
+}
+.explore4{
+    background-image: url(https://blogs.revv.co.in/blogs/wp-content/uploads/2020/05/Hampi.jpg);
+    background-size: 310px 300px;
+}
+.explore5{
+    background-image: url(https://th.bing.com/th/id/OIP.PXdc3-uC0qzSP8qV-pcCEQHaE8?w=750&h=500&rs=1&pid=ImgDetMain);
+    background-size: 310px 300px;
+
+}
+.explore6{
+    background-image: url(https://www.akshartours.com/wp-content/uploads/2020/08/Things-to-do-in-Jharkhand.jpg);
+    background-size: 310px 300px;
+}
+.explore7{
+    background-image: url(https://wallpapercave.com/wp/wp4021351.jpg);
+    background-size: 310px 300px;
+}
+.explore8{
+    background-image: url(https://images-acme.mmtcdn.com/prod-acme-image/system/product_media/c/135498/media3LD8CLMC8IZNW.jpg);
+    background-size: 310px 300px;
+}
+.explore9{
+    background-image: url(https://th.bing.com/th/id/OIP._2yOZYByj5P_2l5YDQTGwgHaEY?rs=1&pid=ImgDetMain);
+    background-size: 310px 300px;
+}
+.explore10{
+    background-image: url(https://i.redd.it/9ymy8vsjjc951.jpg);
+    background-size: 310px 300px;
+}
+
+.trending{
+    margin-left: 10%;
+}
+
+.flip-carts{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    
+
+}
+.cart1,.cart2{
+    height: 250px;
+    width: 45%;
+    
+    border-radius: 5px;
+}
+.cart1{
+    background-image: url(https://cf.bstatic.com/xdata/images/city/600x600/691521.jpg?k=d7df6dbe225d7d7712e4dac75dfe9b6a96adeebb7c2bc8372901148c3cc1cdd4&o=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 610px 250px;
+    transition: transform 1s ease; 
+}
+.cart2{
+    background-image: url(https://cf.bstatic.com/xdata/images/city/600x600/684573.jpg?k=81b297662f5c8f9562b0193a71a30b71d56e516eb327d4249db68bc8e9bcf3b8&o=);
+    background-size: cover;
+    background-size: 670px 250px ;
+    transition: transform 1s ease;
+}
+.cart1 h2,p, .cart2 h2,p, .cart3 h2,p, .cart4 h2,p, .cart5 h2,p{
+    margin-top: 4px;
+    padding-left: 11px;
+    color: white;
+    font-weight: bold;
+}
+.cart1:hover, .cart2:hover, .cart3:hover, .cart4:hover, .cart5:hover{
+    transform: scale(1.1);
+    
+}
+.line2-cart{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+
+}
+.line2-cart .cart3,.cart4, .cart5{
+    height: 250px;
+    width: 30%;
+    border-radius: 5px;
+}
+.cart3{
+    background-image: url(https://cf.bstatic.com/xdata/images/city/600x600/684573.jpg?k=81b297662f5c8f9562b0193a71a30b71d56e516eb327d4249db68bc8e9bcf3b8&o=);
+    background-size: cover;
+    background-size: 455px 245px;
+    transition: transform 1s ease;
+}
+.cart4{
+    background-image: url(https://cf.bstatic.com/xdata/images/city/600x600/684548.jpg?k=6105f1862b8bfa3f98596dc79e917903739517b4d99302d8b38c2723d34bc362&o=);
+    background-size: contain;
+    background-size:  455px 245px;
+    transition: transform 1s ease;
+}
+.cart5{
+    background-image: url(https://cf.bstatic.com/xdata/images/city/600x600/733507.jpg?k=66c8dae717d74c6e7a05e0140e2fe3f87b6061e50b7aa36e317c05b3796cb257&o=);
+    background-size:  455px 245px;
+    transition: transform 1s ease;
+}
+
+.rating-carts{
+   
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 10%;
+    margin-right: 6.5%;
+    margin-top: 2%;
+    
+    
+    
+    
+   
+   
+    
+   
+}
+/* .rating1, .rating2, */
+
+.rating1, .rating2,.rating3, .rating4, .rating5, .rating6, .rating7, .rating8, .rating9, .rating10{
+    height: 400px;
+    width: 300px;
+    /* margin-top: 30px;
+    border: 2px solid black; */
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px gray;
+    display: inline-block;
+    transition: transform 0.8s ease;
+    
+
+}
+.rating1:hover, .rating2:hover,.rating3:hover, .rating4:hover, .rating5:hover, .rating6:hover, .rating7:hover, .rating8:hover, .rating9:hover, .rating10:hover{
+    transform: scale(1.1);
+
+}
+ .rating1{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/620560447.jpg?k=9bf1f36b890e29f58d219d7e1740b1ac55608cbff7bb9b49b058cb0f32587e0e&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+.rating2{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/508650685.jpg?k=8276b97044e7f6ea4531689b61083e7dbc03b3e9a29ddbb81e121ef336bfc1ab&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+} 
+
+.rating3{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/615137684.jpg?k=2847500a8708b91378d18040a3449fe20875ef13d582f4194d399239b4293843&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+
+.rating4{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/474184394.jpg?k=e225a79b5daee8aca0ab4af6ec89924b72471a65ee2298fdb6c5c557fc98bed0&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+.rating5{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/585044075.jpg?k=ce27780d6653bd428386e23d99e7999cf430ffd95c068d93eea0140e326bbbb9&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+
+.rating6{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/598619407.jpg?k=054245b3d56d7cb795f1268046c36ef619115f5432e479cffc2cc3aa530b7b38&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+.rating7{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/592926231.jpg?k=0e799e76515324344351a0dd9f0b2185c2c730ba5985b14afb7c90df4031f0a7&o=);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+}
+.rating8{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/534134583.jpg?k=3da378b1980d62a4a66bec86f10095656476b5a5726ef0e25cd592858e6ef322&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+.rating9{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/square240/572753103.jpg?k=6d774ed9f857ef3152f55c6f26d932ca8ad3c2dc755c51848d80e27f1ddaf12e&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+
+.rating10{
+    background-image:url(https://cf.bstatic.com/xdata/images/hotel/square240/572753103.jpg?k=6d774ed9f857ef3152f55c6f26d932ca8ad3c2dc755c51848d80e27f1ddaf12e&o=);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+
+.rating1 .text1,.rating2 .text2,.rating3 .text3, .rating4 .text4, .rating5 .text5, .rating6 .text6, .rating7 .text7, .rating8 .text8, .rating9 .text9, .rating10 .text10{
+  padding-top:70%; 
+    
+}
+
+
+/* .text1 button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+
+}*/
+ .text1 button[type="genius"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text1 button[type="black"]{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text1 h2, .text2 h2{
+    color:black;
+    padding-top: 10px;
+   
+}
+.text2 button[type="genius"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text2 button[type="black"]{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+} 
+.text3 button[type="genius"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text3 button[type="black"]{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text4 button[type="genius"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text4 button[type="black"]{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text5 button[type="genius"],.text6 button[type="genius"],.text7 button[type="genius"],.text8 button[type="genius"],.text9 button[type="genius"],.text10 button[type="genius"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.text5 button[type="black"],.text6 button[type="black"],.text7 button[type="black"],.text8 button[type="black"],.text9 button[type="black"],.text10 button[type="black"]{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.footer-box{
+    margin-left: 10%;
+   
+
+}
+.gift{
+    height: 180px;
+    width: 94%;
+    border: 2px solid gray; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    
+}
+.context{
+    height: 100px;
+    width: 60%;
+    padding-bottom: 12%;
+    padding-left: 10px;
+    /* border: 2px solid black; */
+}
+.photo{
+    height: 100px;
+    width: 30%;
+    /* border: 2px solid black; */
+    background-image:url(https://img.lovepik.com/element/40028/1010.png_1200.png);
+    background-size: 120px 110px;
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    padding-bottom: 12%;
+}
+.booking{
+    height: 80px;
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    height: 350px;
+    width: 85%;
+    display: flex;
+    gap: 5%;
+    margin-left: 10%;
+    background-color: rgb(214, 199, 170);
+    color: black;
+    border-radius: 5px;
+}
+.copyright{
+    height: 50px;
+    width: 85%;
+    margin-left: 10%;
+    border-radius: 5px;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(214, 199, 170); 
+}
+
+.creater{
+    height:6em;
+    width: 40%;
+
+    margin-left: 10%;
+}
+
+    
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="bg-image">
+
+      <div class="nav-content">
+        <h2 style="color: white;">Booking.com</h2>
+        <div class="nav-buttons">
+          <div class="inr"><span><button type="button" class="btn btn-outline-secondary ">INR</button>
+            </span></div>
+          <div class="flag"></div>
+          <div class="questionmark"><span class="bi bi-question-circle"></span>
+          </div>
+          <button type="submit"
+            style="height: 2em; width:9em; background-color: transparent; border: none; color: white; font-size: 18px;">List
+            your propety</button>
+          <button class="btn btn-primary" type="register">Register</button>
+          <button type="signin" class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+      <!-- Second-line Icons -->
+      <div class="headicons">
+        <div class="bed"><span class="bi bi-person-wheelchair"></span>Stays</div>
+        <div class="flight"><span class="bi bi-airplane"></span>Flights</div>
+        <div class="hotel"><span class="bi bi-award-fill"></span>Rewards</div>&nbsp;
+        <div class="carrent"> <span class="bi bi-car-front"></span>TAXI</div>
+        
+      </div>
+    </div>
+    <div class="body-img">
+      <h1>Save up to 35% with <br> Black Friday Deals</h1>
+      <h3>Set your travel plans in motion. Book by Dec 4, 2024 <br> for stays until the end of 2025.</h3> <br>
+      <button class="btn btn-primary ">Explore</button>
+      <div class="searchbar">
+        <div class="b1">Where are you going?</div>
+        <div class="b2">Check-in... --checkout d..</div>
+        <div class="b3">2 adults 0child 1 room</div>
+        <div class="b4">Search</div>
+        <div class="checkbox">
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="body-content">
+    <input type="checkbox"> I'm travelling for work.
+    <h2>offers</h2>
+    <p>Promotions,deals & special offers for you</p>
+    <div class="card1">
+
+      <div class="text">
+        <h3>Go for a good time, not a long time</h3>
+        <p>Finish your year with a mini break .Save 15% or more when you book and stay by january 7, 2025.</p>
+        <button class="btn btn-primary">Find Late Escape Deals</button>
+      </div>
+      <div class="img"></div>
+
+    </div>
+
+    <div class="explore-india">
+      <div class="explore1 ">
+        <h1 style="color: white;">Lucknow</h1>
+      </div>
+      <div class="explore2">
+        <h1 style="color: white;">Banaras</h1>
+      </div>
+      <div class="explore3">
+        <h1 style="color: white;">Ujjain</h1>
+      </div>
+      <div class="explore4">
+        <h1 style="color:gray;">Karnataka</h1>
+      </div>
+      <div class="explore5">
+        <h1>Kashmir</h1>
+      </div>
+      <div class="explore6">
+        <h1 style="color: white;">Jharkhand</h1>
+      </div>
+      <div class="explore7">
+        <h1 style="color: white;">Rajasthan</h1>
+      </div>
+      <div class="explore8">
+        <h1 style="color: black;">Nainital</h1>
+      </div>
+      <div class="explore9">
+        <h1 style="color: white;">Delhi<sub>(lalkila)</sub></h1>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+  <div class="trending">
+    <h2>Trending Destinations</h2>
+    <p>Travellers searching for India also booked these</p>
+    <div class="flip-carts">
+      <div class="cart1">
+        <h2>Baga<span class=""></span></h2>
+        <p>Average price <span>&#8377;</span>6,015,37</p>
+
+      </div>
+      <div class="cart2">
+        <h2>Candolim</h2>
+        <p>Average price <span>&#8377;</span>8,110.73</p>
+      </div>
+
+    </div>
+    <div class="line2-cart">
+      <div class="cart3">
+        <h2>Candolim</h2>
+        <p>Average price <span>&#8377;</span>8,141.12</p>
+      </div>
+      <div class="cart4">
+        <h2>Anjuna</h2>
+        <p>Average price <span>&#8377;</span>9,040.88</p>
+      </div>
+      <div class="cart5">
+        <h2>Vagator</h2>
+        <p>Average price <span>&#8377;</span>18,755.93</p>
+      </div>
+    </div>
+  </div>
+  <!-- Rating Cards -->
+  <div class="rating-carts">
+     <div class="rating1">
+      <div class="text1">
+        <button type="genius">Genius</button>
+        <h2>Hotel Golden Era</h2>
+        <p style="color: black;">Agra, India</p>
+        <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span>Very
+          good 9 reviews</p>
+        <button type="black">Black Friday Deal</button>
+        <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+      </div>
+    </div>
+    <div class="rating2">
+      <div class="text2">
+        <button type="genius">Genius</button>
+        <h5>Tyche Boutique<br> New Delhi</h5>
+        <p style="color: black;">Delhi, India</p>
+        <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span>
+          Very good 9 reviews</p>
+        <button type="black">Black Friday Deal</button>
+        <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+      </div>
+    </div> 
+  
+  <div class="rating3">
+    <div class="text3">
+      <button type="genius">Genius</button>
+      <h2>Treebo Raj Palace</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating4">
+    <div class="text4">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating5">
+    <div class="text5">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating6">
+    <div class="text6">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating7">
+    <div class="text7">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating8">
+    <div class="text8">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating9">
+    <div class="text9">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+  </div>
+  <div class="rating10">
+    <div class="text10">
+      <button type="genius">Genius</button>
+      <h2>Hotel Golden Era</h2>
+      <p style="color: black;">Agra, India</p>
+      <p style="color: black;"> <span style="background-color: blue; color: white; border-radius: 2px;">8.3</span> Very
+        good 9 reviews</p>
+      <button type="black">Black Friday Deal</button>
+      <span>2 nights<del style="color: red;"> <span>&#8377;</span>4,138</del> <span>&#8377;</span>2,483</span>
+    </div>
+   </div>
+  </div>
+</div>
+
+  <div class="footer-box">
+    <h2>Travell more & spend less</h2>
+    <div class="gift">
+      <div class="context">
+        <h5 style="color: black;">Sign in, save money</h5>
+        <p style="color: gray;">Save 10% or more at participating properties - just look for the blue Genius label</p>
+          <button class="btn btn-primary">Sign in</button>
+          <button class="btn btn-primary">Register</button>
+        
+      </div>
+      <div class="photo"></div>
+    </div>
+  </div>
+
+  <div class="booking">
+    <p style="color: black;">Country,Regions,Airport,Hotels, Place of interes, Vacation Home,Apartment, Resorts, Villas,Hostels,B&Bs. Guest Houses, Unique place to stay, All destination. <br>All flight destination. All car rental. All vacation, destination,Guided. Discover, Reviews. Discover monthly stays.</p>
+  </div>
+  
+  <div class="footer">
+    <div class="support">
+      <ul>
+        <h4>Support</h4>
+        <li>Coronavirus(COVID-19)FAQ</li>
+        <li>Manage your trips</li>
+        <li>COntact customer service</li>
+        <li>Safety Resource Centre</li>
+      </ul>
+    </div>
+    <div class="discover">
+      <ul>
+        <h4>Discover</h4>
+        <li>Genius Loyalty program</li>
+        <li>Seasonal and holiday deals</li>
+        <li>Travel articles</li>
+        <li>Booking.com for Business</li>
+        <li>Traveller Review Awards</li>
+        <li>Car rental</li>
+        <li>Flight finder</li>
+        <li>Restaurant resrevations</li>
+        <li>Booking.com for Travel Agents</li>
+      </ul>
+    </div>
+    <div class="terms">
+      <ul>
+        <h4>Terms</h4>
+        <li>Privacy & cookies</li>
+        <li>Terms & condition</li>
+        <li>Grievance officer</li>
+        <li>Modern Slavery Statement</li>
+        <li>Human Right Statement</li>
+      </ul>
+    </div>
+    <div class="partners">
+      <ul>
+        <h4>Partners</h4>
+        <li>Extranet login</li>
+        <li>Partner help</li>
+        <li>List your property</li>
+        <li>Become an affiliate</li>
+      </ul>
+    </div>
+    <div class="about">
+      <ul>
+        <h4>About</h4>
+        <li>About Booking.com</li>
+        <li>How we work</li>
+        <li>Substainability</li>
+        <li>Press center</li>
+        <li>Careers</li>
+        <li>Investor relations</li>
+        <li>corporate</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p style="color: gray;">Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services. <br>
+      Copyright © 1996–2024 Booking.com™. All rights reserved.
+      </p>
+   </div>
+
+   <div class="creater">
+    <h3 style="color: black;">Created by: <span style="color: chocolate;">Sudheer Tiwari</span> </h3>
+   </div>
+
+  
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
